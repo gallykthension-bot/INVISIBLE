@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 480px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px 0 15px;
+            box-sizing: border-box;
+        }
+
+        .radio {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <h1><ins>Contact Us</ins></h1>
+
+    <label>First Name*</label>
+    <input type="text" required>
+
+    <label>Last Name*</label>
+    <input type="text" required>
+
+    <label>Email Address*</label>
+    <input type="email" required>
+
+    <label>Query Type*</label>
+
+    <div class="radio">
+        <input type="radio" name="query" id="general" required>
+        <label for="general">General Enquiry</label>
+    </div>
+
+    <div class="radio">
+        <input type="radio" name="query" id="support">
+        <label for="support">Support Request</label>
+    </div>
+
+    <label>Message*</label>
+    <textarea rows="5" required></textarea>
+
+    <div class="radio">
+        <input type="checkbox" id="consent" required>
+        <label for="consent">I consent to being contacted by the team.</label>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
